@@ -24,7 +24,7 @@ export default ({ mode }) => {
       vueJsx(),
       AutoImport({
         imports: ['vue'],
-        resolvers: [ElementPlusResolver()]
+        resolvers: [ElementPlusResolver({importStyle: 'sass'})]
       }),
       Components({
         resolvers: [
